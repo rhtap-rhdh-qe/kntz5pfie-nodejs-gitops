@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: kntz5pfie-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: kntz5pfie-nodejs 
+  name: kntz5pfie-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: kntz5pfie-nodejs 
